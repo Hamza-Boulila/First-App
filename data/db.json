@@ -35,6 +35,18 @@
       "price": "3033",
       "checked": true,
       "id": 7
+    },
+    {
+      "name": "www",
+      "price": "222",
+      "checked": false,
+      "id": 8
+    },
+    {
+      "name": "www",
+      "price": "220",
+      "checked": false,
+      "id": 9
     }
   ]
 }

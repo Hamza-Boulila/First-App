@@ -9,17 +9,23 @@ import { NewProductComponent } from './new-product/new-product.component';
 import { ProductsComponent } from './products/products.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
-
+    AppComponent,
     EditProductComponent,
     HomeComponent,
     NewProductComponent,
     ProductsComponent,
+    DashboardComponent,
   ],
-  imports: [AppComponent, FormsModule, BrowserModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule],
+  imports: [FormsModule, BrowserModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
+  exports: [
+    DashboardComponent,
+    EditProductComponent
+  ]
 })
 export class AppModule {}
